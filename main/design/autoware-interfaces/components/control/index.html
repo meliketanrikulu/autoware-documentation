@@ -816,6 +816,8 @@
         
           
         
+          
+        
       
       
         
@@ -1186,6 +1188,114 @@
     <li class="md-nav__item">
       <a href="../../../../tutorials/scenario-simulation/rosbag-replay-simulation/driving-log-replayer/" class="md-nav__link">
         Driving Log Replayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tutorials/components_evaluation/">Components evaluation</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Components evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          Localization evaluation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Localization evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/components_evaluation/localization_evaluation/urban-environment-evaluation/" class="md-nav__link">
+        Urban environment evaluation
       </a>
     </li>
   
@@ -3838,6 +3948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -3958,6 +4070,20 @@
     <li class="md-nav__item">
       <a href="../../../../how-to-guides/others/fixing-dependent-package-versions/" class="md-nav__link">
         Fixing dependent package versions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../how-to-guides/others/lane-detection-methods/" class="md-nav__link">
+        Lane Detection Methods
       </a>
     </li>
   
@@ -7640,15 +7766,15 @@
 <h3 id="vehicle-control-command">Vehicle Control Command<a class="headerlink" href="#vehicle-control-command" title="Permanent link">#</a></h3>
 <p>A motion signal to drive the vehicle, achieved by the low-level controller in the vehicle layer. Used by the Vehicle Interface.</p>
 <ul>
-<li><a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_control_msgs/msg/AckermannControlCommand.idl">autoware_auto_control_msgs/AckermannControlCommand</a><ul>
+<li><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_control_msgs/msg/Control.msg">autoware_control_msgs/Control</a><ul>
 <li>builtin_interfaces::msg::Time stamp</li>
-<li><a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_control_msgs/msg/AckermannLateralCommand.idl">autoware_auto_control_msgs/AckermannLateralCommand</a> lateral<ul>
+<li><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_control_msgs/msg/Lateral.msg">autoware_control_msgs/Lateral</a> lateral<ul>
 <li>builtin_interfaces::msg::Time stamp</li>
 <li>float steering_tire_angle</li>
 <li>float steering_tire_rotation_rate</li>
 </ul>
 </li>
-<li><a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_control_msgs/msg/LongitudinalCommand.idl">autoware_auto_control_msgs/LongitudinalCommand</a> longitudinal<ul>
+<li><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_control_msgs/msg/Lateral.msg">autoware_control_msgs/Longitudinal</a> longitudinal<ul>
 <li>builtin_interfaces::msg::Time stamp</li>
 <li>builtin_interfaces::msg::Duration duration</li>
 <li>builtin_interfaces::msg::Duration time_step</li>

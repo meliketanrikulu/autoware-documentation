@@ -816,6 +816,8 @@
         
           
         
+          
+        
       
       
         
@@ -1186,6 +1188,114 @@
     <li class="md-nav__item">
       <a href="../../../../tutorials/scenario-simulation/rosbag-replay-simulation/driving-log-replayer/" class="md-nav__link">
         Driving Log Replayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tutorials/components_evaluation/">Components evaluation</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Components evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          Localization evaluation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Localization evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/components_evaluation/localization_evaluation/urban-environment-evaluation/" class="md-nav__link">
+        Urban environment evaluation
       </a>
     </li>
   
@@ -3838,6 +3948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -3958,6 +4070,20 @@
     <li class="md-nav__item">
       <a href="../../../../how-to-guides/others/fixing-dependent-package-versions/" class="md-nav__link">
         Fixing dependent package versions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../how-to-guides/others/lane-detection-methods/" class="md-nav__link">
+        Lane Detection Methods
       </a>
     </li>
   
@@ -7569,31 +7695,31 @@ which converts the target speed and steering angle to acceleration, steering, an
 <tr>
 <td>Control command</td>
 <td><code>/control/command/control_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_control_msgs/msg/AckermannControlCommand.idl">autoware_auto_control_msgs/msg/AckermannControlCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_control_msgs/msg/Control.msg">autoware_control_msgs/msg/Control</a></td>
 <td>Target controls of the vehicle (steering angle, velocity, ...)</td>
 </tr>
 <tr>
 <td>Control mode command</td>
 <td><code>/control/control_mode_request</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/srv/ControlModeCommand.srv">ControlModeCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/srv/ControlModeCommand.srv">autoware_vehicle_msgs/srv/ControlModeCommand</a></td>
 <td>Request to switch between manual and autonomous driving</td>
 </tr>
 <tr>
 <td>Gear command</td>
 <td><code>/control/command/gear_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/GearCommand.idl">autoware_auto_vehicle_msgs/msg/GearCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/GearCommand.msg">autoware_vehicle_msgs/msg/GearCommand</a></td>
 <td>Target gear of the vehicle</td>
 </tr>
 <tr>
 <td>Hazard lights command</td>
 <td><code>/control/command/hazard_lights_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/HazardLightsCommand.idl">autoware_auto_vehicle_msgs/msg/HazardLightsCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/HazardLightsCommand.msg">autoware_vehicle_msgs/msg/HazardLightsCommand</a></td>
 <td>Target values of the hazard lights</td>
 </tr>
 <tr>
 <td>Turn indicator command</td>
 <td><code>/control/command/turn_indicators_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand.idl">autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/TurnIndicatorsCommand.msg">autoware_vehicle_msgs/msg/TurnIndicatorsCommand</a></td>
 <td>Target values of the turn signals</td>
 </tr>
 </tbody>
@@ -7620,7 +7746,7 @@ which converts the target speed and steering angle to acceleration, steering, an
 <tr>
 <td>Control mode</td>
 <td><code>/vehicle/status/control_mode</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/ControlModeReport.idl">autoware_auto_vehicle_msgs/msg/ControlModeReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/ControlModeReport.msg">autoware_vehicle_msgs/msg/ControlModeReport</a></td>
 <td></td>
 <td>Current control mode (manual, autonomous, ...)</td>
 </tr>
@@ -7634,42 +7760,35 @@ which converts the target speed and steering angle to acceleration, steering, an
 <tr>
 <td>Gear report</td>
 <td><code>/vehicle/status/gear_status</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/GearReport.idl">autoware_auto_vehicle_msgs/msg/GearReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/GearReport.msg">autoware_vehicle_msgs/msg/GearReport</a></td>
 <td></td>
 <td>Current gear of the vehicle</td>
 </tr>
 <tr>
 <td>Hazard light status</td>
 <td><code>/vehicle/status/hazard_lights_status</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/HazardLightsReport.idl">autoware_auto_vehicle_msgs/msg/HazardLightsReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/HazardLightsReport.msg">autoware_vehicle_msgs/msg/HazardLightsReport</a></td>
 <td></td>
 <td>Current hazard lights status</td>
 </tr>
 <tr>
 <td>Steering status</td>
 <td><code>/vehicle/status/steering_status</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/SteeringReport.idl">autoware_auto_vehicle_msgs/msg/SteeringReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/SteeringReport.msg">autoware_vehicle_msgs/msg/SteeringReport</a></td>
 <td></td>
 <td>Current steering angle of the steering tire</td>
 </tr>
 <tr>
-<td>Steering wheel status</td>
-<td><code>/vehicle/status/steering_wheel_status</code></td>
-<td><a href="https://github.com/tier4/tier4_autoware_msgs/blob/tier4/universe/tier4_vehicle_msgs/msg/SteeringWheelStatusStamped.msg">tier4_vehicle_msgs/msg/SteeringWheelStatusStamped</a></td>
-<td>Yes</td>
-<td>Current steering wheel angle</td>
-</tr>
-<tr>
 <td>Turn indicators status</td>
 <td><code>/vehicle/status/turn_indicators_status</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/TurnIndicatorsReport.idl">autoware_auto_vehicle_msgs/msg/TurnIndicatorsReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/TurnIndicatorsReport.msg">autoware_vehicle_msgs/msg/TurnIndicatorsReport</a></td>
 <td></td>
 <td>Current state of the left and right turn indicators</td>
 </tr>
 <tr>
 <td>Velocity status</td>
 <td><code>/vehicle/status/velocity_status</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/VelocityReport.idl">autoware_auto_vehicle_msgs/msg/VelocityReport</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/VelocityReport.msg">autoware_vehicle_msgs/msg/VelocityReport</a></td>
 <td></td>
 <td>Current velocities of the vehicle (longitudinal, lateral, heading rate)</td>
 </tr>
