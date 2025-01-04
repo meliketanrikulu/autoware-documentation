@@ -816,6 +816,8 @@
         
           
         
+          
+        
       
       
         
@@ -1186,6 +1188,114 @@
     <li class="md-nav__item">
       <a href="../../../../tutorials/scenario-simulation/rosbag-replay-simulation/driving-log-replayer/" class="md-nav__link">
         Driving Log Replayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tutorials/components_evaluation/">Components evaluation</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Components evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          Localization evaluation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Localization evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/components_evaluation/localization_evaluation/urban-environment-evaluation/" class="md-nav__link">
+        Urban environment evaluation
       </a>
     </li>
   
@@ -3838,6 +3948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -3958,6 +4070,20 @@
     <li class="md-nav__item">
       <a href="../../../../how-to-guides/others/fixing-dependent-package-versions/" class="md-nav__link">
         Fixing dependent package versions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../how-to-guides/others/lane-detection-methods/" class="md-nav__link">
+        Lane Detection Methods
       </a>
     </li>
   
@@ -7715,7 +7841,7 @@
 <tr>
 <td>Vector Map</td>
 <td><code>/map/vector_map</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_mapping_msgs/msg/HADMapBin.idl">autoware_auto_mapping_msgs/msg/HADMapBin</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_map_msgs/msg/LaneletMapBin.msg">autoware_map_msgs/msg/LaneletMapBin</a></td>
 <td>Map of the environment where the planning takes place.</td>
 </tr>
 </tbody>
@@ -7760,7 +7886,7 @@
 <tr>
 <td>Objects</td>
 <td><code>/perception/object_recognition/objects</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_perception_msgs/msg/PredictedObjects.idl">autoware_auto_perception_msgs/msg/PredictedObjects</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/PredictedObjects.msg">autoware_perception_msgs/msg/PredictedObjects</a></td>
 <td>Set of perceived objects around ego that need to be avoided or followed when planning a trajectory. This contains semantics information such as a object class (e.g. vehicle, pedestrian, etc) or a shape of the objects.</td>
 </tr>
 <tr>
@@ -7778,7 +7904,7 @@
 <tr>
 <td>Traffic Signal</td>
 <td><code>/perception/traffic_light_recognition/traffic_signals</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_perception_msgs/msg/TrafficSignalArray.idl">autoware_auto_perception_msgs/msg/TrafficSignalArray</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/TrafficLightGroupArray.msg">autoware_perception_msgs::msg::TrafficLightGroupArray</a></td>
 <td>Contains the traffic signal information such as a color (green, yellow, read) and an arrow (right, left, straight).</td>
 </tr>
 </tbody>
@@ -7867,19 +7993,19 @@
 <tr>
 <td>Trajectory</td>
 <td><code>/planning/trajectory</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_planning_msgs/msg/Trajectory.idl">autoware_auto_planning_msgs/msg/Trajectory</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_planning_msgs/msg/Trajectory.msg">autoware_planning_msgs/msg/Trajectory</a></td>
 <td>A sequence of space and velocity and acceleration points to be followed by the controller.</td>
 </tr>
 <tr>
 <td>Turn Indicator</td>
 <td><code>/planning/turn_indicators_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand.idl">autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/TurnIndicatorsCommand.msg">autoware_vehicle_msgs/msg/TurnIndicatorsCommand</a></td>
 <td>Turn indicator signal to be followed by the vehicle.</td>
 </tr>
 <tr>
 <td>Hazard Light</td>
 <td><code>/planning/hazard_lights_cmd</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_vehicle_msgs/msg/HazardLightsCommand.idl">autoware_auto_vehicle_msgs/msg/HazardLightsCommand</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_vehicle_msgs/msg/HazardLightsCommand.msg">autoware_vehicle_msgs/msg/HazardLightsCommand</a></td>
 <td>Hazard light signal to be followed by the vehicle.</td>
 </tr>
 </tbody>
@@ -7917,7 +8043,7 @@
 <tr>
 <td>Path Candidate</td>
 <td><code>/planning/path_candidate/*</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_planning_msgs/msg/Path.idl">autoware_auto_planning_msgs/msg/Path</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_planning_msgs/msg/Path.msg">autoware_planning_msgs/msg/Path</a></td>
 <td>The path Autoware is about to take. Users can interrupt the operation based on the path candidate information.</td>
 </tr>
 <tr>
@@ -7970,7 +8096,7 @@
 <tr>
 <td>Path</td>
 <td><code>/planning/scenario_planning/lane_driving/behavior_planning/path</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_planning_msgs/msg/Path.idl">autoware_auto_planning_msgs/msg/Path</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_planning_msgs/msg/Path.msg">autoware_planning_msgs/msg/Path</a></td>
 <td>A sequence of approximate vehicle positions for driving, along with information on the maximum speed and the drivable areas. Modules receiving this message are expected to make changes to the path within the constraints of the drivable areas and the maximum speed, generating the desired final trajectory.</td>
 </tr>
 </tbody>
@@ -7989,7 +8115,7 @@
 <tr>
 <td>Trajectory</td>
 <td><code>/planning/scenario_planning/trajectory</code></td>
-<td><a href="https://github.com/tier4/autoware_auto_msgs/blob/tier4/main/autoware_auto_planning_msgs/msg/Trajectory.idl">autoware_auto_planning_msgs/msg/Trajectory</a></td>
+<td><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_planning_msgs/msg/Trajectory.msg">autoware_planning_msgs/msg/Trajectory</a></td>
 <td>A sequence of precise vehicle positions, speeds, and accelerations required for driving. It is expected that the vehicle will follow this trajectory.</td>
 </tr>
 </tbody>

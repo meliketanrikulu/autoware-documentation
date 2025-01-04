@@ -816,6 +816,8 @@
         
           
         
+          
+        
       
       
         
@@ -1186,6 +1188,114 @@
     <li class="md-nav__item">
       <a href="../../../../tutorials/scenario-simulation/rosbag-replay-simulation/driving-log-replayer/" class="md-nav__link">
         Driving Log Replayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tutorials/components_evaluation/">Components evaluation</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Components evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          Localization evaluation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Localization evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/components_evaluation/localization_evaluation/urban-environment-evaluation/" class="md-nav__link">
+        Urban environment evaluation
       </a>
     </li>
   
@@ -3838,6 +3948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -3958,6 +4070,20 @@
     <li class="md-nav__item">
       <a href="../../../others/fixing-dependent-package-versions/" class="md-nav__link">
         Fixing dependent package versions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../others/lane-detection-methods/" class="md-nav__link">
+        Lane Detection Methods
       </a>
     </li>
   
@@ -7499,7 +7625,7 @@ We can modify localization launch arguments at tier4_localization_component.laun
 <ul>
 <li>
 <p><strong><code>pose_source:</code></strong> This argument specifies the pose_estimator, currently supporting <code>ndt</code> (default), <code>yabloc</code>, <code>artag</code> and <code>eagleye</code> for localization.
-  By default, Autoware launches <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/ndt_scan_matcher">ndt_scan_matcher</a> for pose estimator.
+  By default, Autoware launches <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/autoware_ndt_scan_matcher">ndt_scan_matcher</a> for pose estimator.
   You can use YabLoc as a camera-based localization method.
   For more details on YabLoc,
   please refer to the <a href="https://github.com/autowarefoundation/autoware.universe/blob/main/localization/yabloc/README.md">README of YabLoc</a> in autoware.universe.
@@ -7519,7 +7645,7 @@ you need to update <code>tier4_localization_component.launch.xml</code> like:</p
 <li>
 <p><strong><code>twist_source:</code></strong> This argument specifies the twist_estimator, currently supporting <code>gyro_odom</code> (default), and <code>eagleye</code>.
   By default,
-  Autoware launches <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/gyro_odometer">gyro_odometer</a> for twist estimator.
+  Autoware launches <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/autoware_gyro_odometer">gyro_odometer</a> for twist estimator.
   Also, you can use eagleye for the twist source, please refer to the <a href="eagleye/">Eagleye</a>.
   If you want to change your twist source to eagleye, you can update <code>tier4_localization_component.launch.xml</code> like:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">- &lt;arg name="twist_source" default="gyro_odom" description="select twist_estimator. gyro_odom, eagleye"/&gt;</span>
@@ -7534,7 +7660,7 @@ you need to update <code>tier4_localization_component.launch.xml</code> like:</p
 <li>
 <p><strong><code>input_pointcloud:</code></strong> This argument specifies the input pointcloud of the localization pointcloud pipeline. The default value is
   <code>/sensing/lidar/top/outlier_filtered/pointcloud</code> which
-  is output of the <a href="https://autowarefoundation.github.io/autoware.universe/main/sensing/pointcloud_preprocessor/">pointcloud pre-processing</a> pipeline from sensing.
+  is output of the <a href="https://autowarefoundation.github.io/autoware.universe/main/sensing/autoware_pointcloud_preprocessor/">pointcloud pre-processing</a> pipeline from sensing.
   You can change this value according to your LiDAR topic name,
   or you can choose to use concatenated point cloud:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">- &lt;arg name="input_pointcloud" default="/sensing/lidar/top/outlier_filtered/pointcloud" description="The topic will be used in the localization util module"/&gt;</span>
@@ -7549,7 +7675,7 @@ you can add this argument on <code>tier4_localization_component.launch.xml</code
 <div class="highlight"><pre><span></span><code><span class="gi">+ &lt;arg name="input_vehicle_twist_with_covariance_topic" value="&lt;YOUR-VEHICLE-TWIST-TOPIC-NAME&gt;"/&gt;</span>
 </code></pre></div>
 <p><strong>Note:</strong> Gyro odometer input topic provided from velocity converter package. This package will be launched at sensor_kit. For more information,
-please check <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/vehicle_velocity_converter">velocity converter package</a>.</p>
+please check <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_vehicle_velocity_converter">velocity converter package</a>.</p>
 <h2 id="note-when-using-non-ndt-pose-estimator">Note when using non NDT pose estimator<a class="headerlink" href="#note-when-using-non-ndt-pose-estimator" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

@@ -816,6 +816,8 @@
         
           
         
+          
+        
       
       
         
@@ -1186,6 +1188,114 @@
     <li class="md-nav__item">
       <a href="../../../../tutorials/scenario-simulation/rosbag-replay-simulation/driving-log-replayer/" class="md-nav__link">
         Driving Log Replayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tutorials/components_evaluation/">Components evaluation</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Components evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          Localization evaluation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Localization evaluation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/components_evaluation/localization_evaluation/urban-environment-evaluation/" class="md-nav__link">
+        Urban environment evaluation
       </a>
     </li>
   
@@ -3838,6 +3948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -3958,6 +4070,20 @@
     <li class="md-nav__item">
       <a href="../../../../how-to-guides/others/fixing-dependent-package-versions/" class="md-nav__link">
         Fixing dependent package versions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../how-to-guides/others/lane-detection-methods/" class="md-nav__link">
+        Lane Detection Methods
       </a>
     </li>
   
@@ -7526,13 +7652,13 @@
     &lt;font size=1&gt;sensor_msgs/PointCloud2&lt;/font size&gt;"):::cls_sen
 
     msg_lanenet("&lt;font size=2&gt;&lt;b&gt;Lanelet2 Map&lt;/b&gt;&lt;/font size&gt;
-    &lt;font size=1&gt;autoware_auto_mapping_msgs/HADMapBin&lt;/font size&gt;"):::cls_loc
+    &lt;font size=1&gt;autoware_map_msgs/LaneletMapBin&lt;/font size&gt;"):::cls_loc
 
     msg_vks("&lt;font size=2&gt;&lt;b&gt;Vehicle Kinematic State&lt;/b&gt;&lt;/font size&gt;
     &lt;font size=1&gt;nav_msgs/Odometry&lt;/font size&gt;"):::cls_loc
 
     msg_obj("&lt;font size=2&gt;&lt;b&gt;3D Object Predictions &lt;/b&gt;&lt;/font size&gt;
-    &lt;font size=1&gt;autoware_auto_perception_msgs/PredictedObjects&lt;/font size&gt;"):::cls_per
+    &lt;font size=1&gt;autoware_perception_msgs/PredictedObjects&lt;/font size&gt;"):::cls_per
 
     msg_tl("&lt;font size=2&gt;&lt;b&gt;Traffic Light Response &lt;/b&gt;&lt;/font size&gt;
     &lt;font size=1&gt;autoware_perception_msgs/TrafficSignalArray&lt;/font size&gt;"):::cls_per
@@ -7573,29 +7699,29 @@ classDef cls_plan fill:#5AB8FF,stroke:#999,stroke-width:1px;</code></pre>
 <h3 id="3d-object-predictions">3D Object Predictions<a class="headerlink" href="#3d-object-predictions" title="Permanent link">#</a></h3>
 <p>3D Objects detected, tracked and predicted by sensor fusing.</p>
 <ul>
-<li><a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/PredictedObjects.idl">autoware_auto_perception_msgs/msg/PredictedObjects</a><ul>
+<li><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/PredictedObjects.msg">autoware_perception_msgs/msg/PredictedObjects</a><ul>
 <li><a href="https://docs.ros.org/en/noetic/api/std_msgs/html/msg/Header.html">std_msgs/Header</a> header</li>
-<li>sequence&lt;<a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/PredictedObject.idl">autoware_auto_perception_msgs::msg::PredictedObject</a>&gt; objects<ul>
+<li>sequence&lt;<a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/PredictedObject.msg">autoware_perception_msgs::msg::PredictedObject</a>&gt; objects<ul>
 <li>unique_identifier_msgs::msg::UUID uuid</li>
 <li>float existence_probability</li>
-<li>sequence&lt;<a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/ObjectClassification.idl">autoware_auto_perception_msgs::msg::ObjectClassification</a>&gt; classification<ul>
+<li>sequence&lt;<a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/ObjectClassification.msg">autoware_perception_msgs::msg::ObjectClassification</a>&gt; classification<ul>
 <li>uint8 classification</li>
 <li>float probability</li>
 </ul>
 </li>
-<li><a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/PredictedObjectKinematics.idl">autoware_auto_perception_msgs::msg::PredictedObjectKinematics</a> kinematics<ul>
+<li><a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/PredictedObjectKinematics.msg">autoware_perception_msgs::msg::PredictedObjectKinematics</a> kinematics<ul>
 <li><a href="https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/PoseWithCovariance.html">geometry_msgs::msg::PoseWithCovariance</a> initial_pose</li>
 <li><a href="https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/TwistWithCovariance.html">geometry_msgs::msg::TwistWithCovariance</a></li>
 <li><a href="https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/AccelWithCovariance.html">geometry_msgs::msg::AccelWithCovariance</a> initial_acceleration</li>
-<li>sequence&lt;<a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/PredictedPath.idl">autoware_auto_perception_msgs::msg::PredictedPath</a>, 10&gt; predicted_paths<ul>
+</ul>
+</li>
+<li>sequence&lt;<a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/PredictedPath.msg">autoware_perception_msgs::msg::PredictedPath</a>, 10&gt; predicted_paths<ul>
 <li>sequence&lt;<a href="https://docs.ros.org/en/lunar/api/geometry_msgs/html/msg/Pose.html">geometry_msgs::msg::Pose</a>, 100&gt; path</li>
 <li>builtin_interfaces::msg::Duration time_step</li>
 <li>float confidence</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>sequence&lt;<a href="https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs/-/blob/master/autoware_auto_perception_msgs/msg/Shape.idl">autoware_auto_perception_msgs::msg::Shape</a>, 5&gt; shape<ul>
+<li>sequence&lt;<a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_perception_msgs/msg/Shape.msg">autoware_perception_msgs::msg::Shape</a>, 5&gt; shape<ul>
 <li><a href="https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Polygon.html">geometry_msgs::msg::Polygon</a> polygon</li>
 <li>float height</li>
 </ul>
